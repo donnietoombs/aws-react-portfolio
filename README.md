@@ -6,3 +6,7 @@ My Professional Portfolio deployed in AWS on a serverless architecture written i
 Git and Github
 SSH
 React
+HTML
+CSS
+Font Awesome
+Google Fonts
