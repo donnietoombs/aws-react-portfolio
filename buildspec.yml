@@ -11,7 +11,7 @@ artifacts:
     files:
       - index.html
       - favicon.ico
-      - dtResume_it-V1.31.19.pdf
+      - dtResume_it_V1.31.19.pdf
       - styles/*
       - images/*
       - dist/bundle.js
