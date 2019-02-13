@@ -27,17 +27,17 @@ def lambda_handler(event, context):
         portfolio_bucket=s3.Bucket('portfolio.donaldtoombs.com')
         build_bucket = s3.Bucket(location["bucketName"])
         
-        portfolio_zip = StringIO.StringIO(0)
-        build_bucket.download_fileobj('portfoliobuild.zip', portfolio_zip)
+        portfolio_zip = StringIO.StringIO()
+        build_bucket.download_fileobj(location["objectKey"], portfolio_zip)
         
         with zipfile.ZipFile(portfolio_zip) as myzip:
             for nm in myzip.namelist():
                 obj = myzip.open(nm)
-                portfolio_bucket.upload_fileobj(obj,nm,)
+                portfolio_bucket.upload_fileobj(obj, nm)
                 portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
             
         print "Job Done"
-        topic.publish(Subject= "Portfolio Deployed", Message ="Portfolio Deployed Successfully")
+        topic.publish(Subject="Portfolio Deployed", Message ="Portfolio Deployed Successfully")
         if job:
             codepipeline = boto3.client('codepipeline')
             codepipeline.put_job_success_result(jobId=job["id"])

@@ -4,7 +4,9 @@
   "description": "My Professional Portfolio deployed in AWS on a serverless architecture written in React.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
