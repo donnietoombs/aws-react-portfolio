@@ -3,6 +3,8 @@ version: 0.2
 phases: 
     build:
       commands:
+        - npm install
+        - npm run webpack
     
 
 artifacts:
@@ -12,3 +14,4 @@ artifacts:
       - dtResume_it-V1.31.19.pdf
       - styles/*
       - images/*
+      - dist/bundle.js
