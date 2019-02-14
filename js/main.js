@@ -5,6 +5,8 @@ import ExampleWork from './example-work';
 const myWork = [
     {
         'title': "React-Portfolio",
+        'href': "https://portfolio.donaldtoombs.com",
+        'desc': "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum",
         'image': {
             'desc': "example screenshot of a project involving chemistry",
             'src':"images/example1.png",
@@ -14,6 +16,8 @@ const myWork = [
 
     {
         'title': "Train Scheduler",
+        'href': "https://portfolio.donaldtoombs.com",
+        'desc': "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum",
         'image': {
             'desc': "example screenshot of a project involving chemistry",
             'src':"images/example2.png",
@@ -24,6 +28,8 @@ const myWork = [
     
     {
         'title': "Football Ticket Searcher",
+        'href': "https://portfolio.donaldtoombs.com",
+        'desc': "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum",
         'image': {
             'desc': "example screenshot of a project involving cats",
             'src':"images/example3.png",
