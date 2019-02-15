@@ -95,8 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .section--description {
   font-size: 2.8rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .section__description {
@@ -229,3 +227,8 @@ h1, h2, h3, h4, h5, h6 {
 .modal__image {
   opacity: 0.2;
 }
+ #example-work{
+  font-size: 2.8rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+ }
